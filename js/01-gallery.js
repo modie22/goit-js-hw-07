@@ -46,7 +46,4 @@ function onlinkEl(evt) {
     }
   }
   instance.show();
-};
-
-
-
+}
