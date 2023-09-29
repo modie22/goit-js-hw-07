@@ -1,7 +1,6 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
-console.log(galleryItems);
 const galleryEl = document.querySelector(".gallery");
 
 const galleryImgItems = ({ preview, original, description }) => {
@@ -13,8 +12,8 @@ const galleryImgItems = ({ preview, original, description }) => {
     `;
 };
 const elements = galleryItems.map(galleryImgItems).join("");
-
 galleryEl.insertAdjacentHTML("afterbegin", elements);
+
 galleryEl.addEventListener("click", onlinkEl);
 
 function onlinkEl(evt) {
