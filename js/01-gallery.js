@@ -29,9 +29,8 @@ function onlinkEl(evt) {
     />
   `,
     {
-      onShow: (instance) => {
+      onShow: () => {
         window.addEventListener("keydown", onEscPress);
-        instance.element().querySelector("img").onclick = instance.close;
       },
       onClose: () => {
         window.removeEventListener("keydown", onEscPress);

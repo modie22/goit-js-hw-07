@@ -13,6 +13,9 @@ const galleryImgItems = ({ preview, original, description }) => {
 const elements = galleryItems.map(galleryImgItems).join("");
 galleryEl.insertAdjacentHTML("afterbegin", elements);
 
-const gallery = new SimpleLightbox("ul.gallery a");
-gallery.options.captionsData = "alt";
-gallery.options.captionDelay = 250;
+const gallery = new SimpleLightbox("ul.gallery a",
+{
+  captionsData: "alt",
+  captionDelay: 250,
+});
+
